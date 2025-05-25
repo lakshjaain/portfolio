@@ -102,14 +102,14 @@ body {
 
 .name-head {
   font-weight: 800;
-  font-size: clamp(2rem, 5vw, 4rem);
+  font-size: clamp(2.5rem, 5vw, 4rem);
   margin-bottom: 25px;
   line-height: 1.2;
 }
 
 .name-p {
   font-weight: 100;
-  font-size: clamp(1rem, 3vw, 1.5rem);
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
   max-width: 40rem;
   font-family: "Fira Code", monospace;
   margin: 0 auto;
@@ -242,7 +242,7 @@ body {
   }
 
   .location-p {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 
   .home-a {
@@ -254,6 +254,7 @@ body {
   .main-a {
     width: 100%;
     margin: 0;
+    font-size: 1.1rem;
   }
 
   .socials {
@@ -272,40 +273,49 @@ body {
 
   .name-head {
     margin-bottom: 15px;
+    font-size: 2.8rem;
+  }
+
+  .name-p {
+    font-size: 1.2rem;
   }
 
   .main-a {
-    padding: 10px 20px;
-    font-size: 0.9rem;
+    padding: 12px 24px;
+    font-size: 1.1rem;
   }
 
   .resume-link {
-    padding: 8px 12px;
-    font-size: 0.8rem;
+    padding: 10px 16px;
+    font-size: 1rem;
   }
 
   .socials {
-    gap: 20px;
+    gap: 25px;
+  }
+
+  .location-p {
+    font-size: 1.1rem;
   }
 
   .location-p svg {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
   }
 }
 
 @media (max-width: 320px) {
   .name-head {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
   }
 
   .name-p {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 
   .main-a {
-    padding: 8px 16px;
-    font-size: 0.85rem;
+    padding: 10px 20px;
+    font-size: 1rem;
   }
 }
 
