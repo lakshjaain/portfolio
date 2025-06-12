@@ -5,72 +5,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Laksh Jain</title>
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="header">
       <div class="header-divs right-part">
         <a href="" class="right-a">Home</a>
+        <a href="#projects-section" class="right-a">Projects</a>
       </div>
     </header>
     <div class="cursor-dot"></div>
 
-<div class="home-sec">
-  <div class="maintext">
-    <h2 class="name-head">
-      Hi, I'm
-      <div class="name-container">
-        <span class="name-span">Laksh</span>
-        <a href="Laksh Resume.pdf" download class="resume-link"
-          >Download Resume</a
-        >
+    <div class="home-sec">
+      <div class="maintext">
+        <h2 class="name-head">
+          Hi, I'm
+          <div class="name-container">
+            <span class="name-span">Laksh</span>
+            <a href="Laksh Resume.pdf" download class="resume-link"
+              >Download Resume</a
+            >
+          </div>
+        </h2>
+        <p class="name-p">
+          I create beautiful, functional, and user-friendly digital experiences
+        </p>
       </div>
-    </h2>
-    <p class="name-p">
-      I create beautiful, functional, and user-friendly digital experiences
-    </p>
-  </div>
 
-  <div class="location-div">
-    <p class="location-p">
-      <svg
-        class="location-svg"
-        xmlns="http://www.w3.org/2000/svg"
-        height="24px"
-        viewBox="0 -960 960 960"
-        width="24px"
-        fill="#f0f0f0"
-      >
-        <path
-          d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"
-        />
-      </svg>
-      <span class="location-text">Chennai, Tamil Nadu</span>
-    </p>
+      <div class="location-div">
+        <p class="location-p">
+          <svg
+            class="location-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#f0f0f0"
+          >
+            <path
+              d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"
+            />
+          </svg>
+          <span class="location-text">Chennai, Tamil Nadu</span>
+        </p>
 
-    <div class="home-a">
-      <a href="mailto:laksh.jaain@gmail.com" class="main-a left-home-a">Get in touch</a>
-      <a href="" class="main-a right-home-a">Projects</a>
+        <div class="home-a">
+          <a href="mailto:laksh.jaain@gmail.com" class="main-a left-home-a"
+            >Get in touch</a
+          >
+          <a href="#projects-section" class="main-a right-home-a">Projects</a>
+        </div>
+
+        <div class="socials">
+          <a href="http://github.com/lakshjaain" target="_blank" class="github"
+            ><i class="fa-brands fa-github fa-2xl" style="color: #b197fc"></i
+          ></a>
+          <a
+            href="http://www.linkedin.com/in/lakshjaain"
+            target="_blank"
+            class="linkedin"
+            ><i class="fa-brands fa-linkedin fa-2xl" style="color: #b197fc"></i
+          ></a>
+          <a href="mailto:laksh.jaain@gmail.com" target="_blank" class="mail"
+            ><i class="fa-solid fa-envelope fa-2xl" style="color: #b197fc"></i
+          ></a>
+        </div>
+      </div>
     </div>
 
-    <div class="socials">
-      <a href="http://github.com/lakshjaain" target="_blank" class="github"
-        ><i class="fa-brands fa-github fa-2xl" style="color: #b197fc"></i
-      ></a>
-      <a
-        href="http://www.linkedin.com/in/lakshjaain"
-        target="_blank"
-        class="linkedin"
-        ><i class="fa-brands fa-linkedin fa-2xl" style="color: #b197fc"></i
-      ></a>
-      <a href="mailto:laksh.jaain@gmail.com" target="_blank" class="mail"
-        ><i class="fa-solid fa-envelope fa-2xl" style="color: #b197fc"></i
-      ></a>
+    <div class="projects-title">
+      <h1>Projects</h1>
     </div>
-  </div>
-  </div>
-</div>
+
+    <section class="projects-section" id="projects-section">
+      <div class="projects-grid">
+        <div
+          class="project-card"
+          data-tilt
+          data-tilt-max="10"
+          data-tilt-speed="400"
+          data-tilt-perspective="1000"
+        >
+          <img
+            src="images/rasvihar-remake.png"
+            alt="Rasvihar Remake"
+            class="project-image"
+          />
+          <div class="project-overlay">
+            <h3 class="project-title">Rasvihar</h3>
+            <p class="project-description">
+              A dynamic e-commerce website with product filtering, cart
+              management, and secure checkout. Designed for optimal user
+              experience and performance.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div
+          class="project-card"
+          data-tilt
+          data-tilt-max="10"
+          data-tilt-speed="400"
+          data-tilt-perspective="1000"
+        >
+          <img
+            src="images/Screenshot 2025-06-09 195327.png"
+            alt="jainexpotex"
+            class="project-image"
+          />
+          <div class="project-overlay">
+            <h3 class="project-title">Jain Expotex</h3>
+            <p class="project-description">
+              A sleek portfolio site showcasing my work with smooth animations
+              and responsive design, built to highlight my skills and projects.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+
     <script
       src="https://kit.fontawesome.com/cd5b23d96a.js"
       crossorigin="anonymous"
