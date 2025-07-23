@@ -68,3 +68,35 @@ class SimpleTrail {
 window.addEventListener("load", () => {
   new SimpleTrail();
 });
+
+const form = document.getElementById("newsletter-form");
+const form_button = document.getElementById("newsletter-button");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault(); // Prevents the default form submission behavior.
+
+  form_button.textContent = "Sending...";
+
+  const data = new FormData(form);
+  const action =
+    "https://script.google.com/macros/s/AKfycbw8pMigYITUWRAncbG9dhNwiglMCjciXcAbczAYoF6WzFhWHYSe1VvsIQVqmnb6F_O3/exec";
+
+  fetch(action, {
+    method: "POST",
+    body: data,
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      if (data.result === "success") {
+        form_button.textContent = "Thank You!";
+        form.reset();
+      } else {
+        form_button.textContent = "error occurred.";
+        console.error(data.error);
+      }
+    })
+    .catch((error) => {
+      statusMessage.textContent = "❌ An error occurred.";
+      console.error(error);
+    });
+});

@@ -10,8 +10,9 @@
   <body>
     <header class="header">
       <div class="header-divs right-part">
-        <a href="" class="right-a">Home</a>
+        <a href="#" class="right-a">Home</a>
         <a href="#projects-section" class="right-a">Projects</a>
+        <a href="#newsletter-section" class="right-a">Newsletter</a>
       </div>
     </header>
     <div class="cursor-dot"></div>
@@ -134,6 +135,41 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="newsletter" id="newsletter-section">
+      <div class="newletter-outer newsletter-ele">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="48px"
+          viewBox="0 -960 960 960"
+          width="50px"
+          fill="#00bdd6"
+        >
+          <path
+            d="M140-160q-24 0-42-18t-18-42v-520q0-24 18-42t42-18h680q24 0 42 18t18 42v520q0 24-18 42t-42 18H140Zm340-302L140-685v465h680v-465L480-462Zm0-60 336-218H145l335 218ZM140-685v-55 520-465Z"
+          />
+        </svg>
+        <h4 class="newsletter-head newsletter-ele">
+          Stay updated, Subscribe to the newsletter!
+        </h4>
+        <form id="newsletter-form" class="newsletter-ele news-form">
+          <input
+            name="email"
+            type="email"
+            placeholder="Your Email"
+            class="newsletter-ele news-inpt"
+            required
+          />
+          <button
+            type="submit"
+            class="newsletter-ele news-butt"
+            id="newsletter-button"
+          >
+            Subscribe
+          </button>
+        </form>
       </div>
     </section>
 
